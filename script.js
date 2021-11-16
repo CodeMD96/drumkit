@@ -1,16 +1,16 @@
 const sounds = {
-    a : new Audio('sounds/clap.wav'),
-    s : new Audio('sounds/hihat.wav'),
-    d : new Audio('sounds/kick.wav'),
-    f : new Audio('sounds/openhat.wav'),
-    g : new Audio('sounds/boom.wav'),
-    h : new Audio('sounds/ride.wav'),
-    j : new Audio('sounds/snare.wav'),
-    k : new Audio('sounds/tom.wav'),
-    l : new Audio('sounds/tink.wav'),
+    KeyA : new Audio('sounds/clap.wav'),
+    KeyS : new Audio('sounds/hihat.wav'),
+    KeyD : new Audio('sounds/kick.wav'),
+    KeyF : new Audio('sounds/openhat.wav'),
+    KeyG : new Audio('sounds/boom.wav'),
+    KeyH : new Audio('sounds/ride.wav'),
+    KeyJ : new Audio('sounds/snare.wav'),
+    KeyK : new Audio('sounds/tom.wav'),
+    KeyL : new Audio('sounds/tink.wav'),
 };
 
 addEventListener("keypress", (e) => {
-    sounds[`${e.key.toLowerCase()}`].currentTime = 0;
-    sounds[`${e.key.toLowerCase()}`].play();
+    sounds[`${e.code}`].currentTime = 0;
+    sounds[`${e.code}`].play();
 });
