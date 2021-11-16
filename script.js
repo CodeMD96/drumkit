@@ -10,7 +10,7 @@ const sounds = {
     l : new Audio('sounds/tink.wav'),
 };
 
-addEventListener("keypress", (event) => {
-    sounds[`${event.key.toLowerCase()}`].currentTime = 0;
-    sounds[`${event.key.toLowerCase()}`].play();
+addEventListener("keypress", (e) => {
+    sounds[`${e.key.toLowerCase()}`].currentTime = 0;
+    sounds[`${e.key.toLowerCase()}`].play();
 });
