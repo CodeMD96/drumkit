@@ -11,6 +11,6 @@ const sounds = {
 };
 
 addEventListener("keypress", (event) => {
-    sounds[`${event.key.toLowerCase()}`].load();
+    sounds[`${event.key.toLowerCase()}`].currentTime = 0;
     sounds[`${event.key.toLowerCase()}`].play();
 });
