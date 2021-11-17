@@ -1,0 +1,13 @@
+button {
+    height: 20px;
+    width: 150px;
+    text-align: left;
+}
+
+#keys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
